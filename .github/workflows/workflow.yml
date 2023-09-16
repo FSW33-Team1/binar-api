@@ -16,11 +16,12 @@ jobs:
         uses: docker/setup-buildx-action@v2
         id: buildx
       - name: Deploy to SSH
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v1.0.0
         with:
-          host: "103.67.186.27"
-          username: "ayat"
-          password: "Brexdmcs991!"
+          host: 103.67.186.27
+          port: 22
+          username: ayat
+          password: Brexdmcs991!
           sync: true
           script: |
             DIR="/home/ayat/binar-api" \
