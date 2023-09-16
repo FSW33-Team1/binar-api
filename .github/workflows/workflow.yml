@@ -24,8 +24,9 @@ jobs:
           password: Brexdcms991!
           sync: true
           script: |
-            DIR="/home/ayat/binar-api" \
-            export PATH="/home/ayat/.local/share/fnm:$PATH"; eval "`fnm env`" \
+            export DIR="/home/ayat/binar-api" \
+            export PATH="/home/ayat/.local/share/fnm:$PATH" \
+            && eval "`fnm env`" \
             && cd $DIR \
             && git pull origin main \
             && source ~/.bashrc \
