@@ -25,8 +25,9 @@ jobs:
           sync: true
           script: |
             DIR="/home/ayat/binar-api" \
+            BINPATH="/home/ayat/.local/share/fnm/node-versions/v18.17.1/installation/bin" \
             && cd $DIR \
             && git pull origin main \
             && source ~/.bashrc \
-            && npm ci \
-            && pm2 restart app
+            && $BINPATH/npm ci \
+            && $BINPATH/pm2 restart app
