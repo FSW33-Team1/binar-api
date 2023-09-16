@@ -21,7 +21,7 @@ jobs:
           host: 103.67.186.27
           port: 22
           username: ayat
-          password: Brexdcms911!
+          password: Brexdcms991!
           sync: true
           script: |
             DIR="/home/ayat/binar-api" \
