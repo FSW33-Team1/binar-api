@@ -18,9 +18,9 @@ jobs:
       - name: Deploy to SSH
         uses: appleboy/ssh-action@master
         with:
-          host: 103.67.186.27
-          username: ayat
-          password: Brexdmcs991!
+          host: "103.67.186.27"
+          username: "ayat"
+          password: "Brexdmcs991!"
           sync: true
           script: |
             DIR="/home/ayat/binar-api" \
