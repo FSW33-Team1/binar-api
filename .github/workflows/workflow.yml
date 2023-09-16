@@ -27,5 +27,6 @@ jobs:
             DIR="/home/ayat/binar-api" \
             && cd $DIR \
             && git pull origin main \
+            && source ~/.bashrc \
             && npm ci \
             && pm2 restart app
