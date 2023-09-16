@@ -6,5 +6,9 @@ v1.get("/", (_, res) => {
 });
 
 v1.use("/players", playerRouter);
-
+v1.use("/score", (req, res) => {
+  res.json({
+    score: 100
+  });
+})
 module.exports = v1;
